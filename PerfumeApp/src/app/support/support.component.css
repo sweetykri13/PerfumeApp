@@ -1,0 +1,37 @@
+.head{
+color:white;
+text-align:center;
+
+margin-top:40px;
+margin-left:30px;
+}
+
+.head1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left:40px;
+  /*border:2px solid red;*/
+}
+
+.head1 div {
+    flex-basis: 180%;
+}
+.head1 div input[type="text"] {
+      width: 500px;
+      padding: 7px;
+      color: white;
+      background-color: #231B3B;
+}
+
+.head1 select {
+    width: 1260px;
+    padding: 12px;
+    color: white;
+    margin-right:95px;
+    margin-left:100px;
+    background-color: #231B3B;
+}
+
+

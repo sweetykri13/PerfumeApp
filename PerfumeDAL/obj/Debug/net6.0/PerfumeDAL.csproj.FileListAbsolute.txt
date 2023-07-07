@@ -1,0 +1,14 @@
+D:\Perfume\PerfumeProject\PerfumeDAL\bin\Debug\net6.0\PerfumeDAL.deps.json
+D:\Perfume\PerfumeProject\PerfumeDAL\bin\Debug\net6.0\PerfumeDAL.runtimeconfig.json
+D:\Perfume\PerfumeProject\PerfumeDAL\bin\Debug\net6.0\PerfumeDAL.dll
+D:\Perfume\PerfumeProject\PerfumeDAL\bin\Debug\net6.0\PerfumeDAL.pdb
+D:\Perfume\PerfumeProject\PerfumeDAL\obj\Debug\net6.0\PerfumeDAL.csproj.AssemblyReference.cache
+D:\Perfume\PerfumeProject\PerfumeDAL\obj\Debug\net6.0\PerfumeDAL.GeneratedMSBuildEditorConfig.editorconfig
+D:\Perfume\PerfumeProject\PerfumeDAL\obj\Debug\net6.0\PerfumeDAL.AssemblyInfoInputs.cache
+D:\Perfume\PerfumeProject\PerfumeDAL\obj\Debug\net6.0\PerfumeDAL.AssemblyInfo.cs
+D:\Perfume\PerfumeProject\PerfumeDAL\obj\Debug\net6.0\PerfumeDAL.csproj.CoreCompileInputs.cache
+D:\Perfume\PerfumeProject\PerfumeDAL\obj\Debug\net6.0\PerfumeDAL.dll
+D:\Perfume\PerfumeProject\PerfumeDAL\obj\Debug\net6.0\refint\PerfumeDAL.dll
+D:\Perfume\PerfumeProject\PerfumeDAL\obj\Debug\net6.0\PerfumeDAL.pdb
+D:\Perfume\PerfumeProject\PerfumeDAL\obj\Debug\net6.0\PerfumeDAL.genruntimeconfig.cache
+D:\Perfume\PerfumeProject\PerfumeDAL\obj\Debug\net6.0\ref\PerfumeDAL.dll

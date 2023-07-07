@@ -1,0 +1,26 @@
+<div style="background-color: #231B3B; padding-bottom: 50px;">
+  <div>
+    <app-navbar></app-navbar>
+  </div>
+  <div style="display:flex;flex-wrap: wrap; justify-content: center; margin-top: 60px;">
+    <div *ngFor="let prod of products" style="width: 25%; padding: 10px;">
+      <div class="card">
+        <div class="card" style="display:flex;">
+          <img class="img1 card-image" src="assets/perfumehome1.jpg" alt="Product Image">
+          <button class="button1 card-button" style="width:30px;height:30px; margin-top:8px;margin-left:12px;" (click)="addToWishlist(prod)">
+            <i style="margin-left:2px;" class="bi bi-heart-fill"></i>
+          </button>
+        </div>
+          <div class="card-content">
+            <h3 class="card-title">{{prod.productName}}</h3>
+            <p class="card-description">${{prod.price}}</p>
+            <button class="card-button" (click)="addToCart(prod)">Add to Cart</button>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div style="background-color:#231B3B; padding-bottom: 5px; padding-top: 5px;">
+  <app-footer></app-footer>
+</div>

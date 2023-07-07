@@ -1,0 +1,48 @@
+<div style="background-color: #231B3B; padding-bottom: 50px;">
+  <div>
+    <app-navbar></app-navbar>
+  </div>
+  <div class="head">
+    <h1 style="font-family: Georgia, serif;font-size:45px;">Contact Support</h1>
+    <h4 style="margin-bottom:50px;font-size:20px;">How can we help you?</h4>
+    <form [formGroup]="supportForm" (submit)="support()">
+      <div class="head1">
+        <div>
+          <input type="text" placeholder="First Name" formControlName="firstName" required/>
+        </div>
+        <div>
+          <input type="text" placeholder="Last Name" formControlName="lastName" required/>
+        </div>
+      </div>
+      <div class="head1">
+        <div>
+          <input type="text" placeholder="Email Id" formControlName="emailId" required/>
+        </div>
+        <div>
+          <input type="text" placeholder="Phone" formControlName="phone" />
+        </div>
+      </div>
+      <div class="head1">
+        <select>
+          <option>Choose an Option</option>
+          <ng-container *ngFor="let opt of option">
+            <option>{{ opt.optionValue }}</option>
+          </ng-container>
+        </select>
+      </div>
+
+      <div class="head1">
+        <input type="text" style="width: 1263px; color: white; background-color: #231B3B; margin-left: 97px; height: 45px;margin-right:93px; " placeholder="Description" formControlName="description" />
+      </div>
+      <div style="text-align:center;">
+        <button style=" height: 40px; width: 120px; background-color:#231B3B;color:white;border-block-color:white;margin-top:1px;" type="submit">Get In Touch</button>
+      </div>
+    </form>
+    <div *ngIf="contactStatus" style="color:white;margin-top:20px;margin-left:50px;">
+      {{ contactStatus }}
+    </div>
+  </div>
+  </div>
+  <div style="background-color: #231B3B; padding-bottom: 20px; padding-top: 10px;">
+    <app-footer></app-footer>
+  </div>

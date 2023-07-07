@@ -1,0 +1,54 @@
+<div style="background-color: #231B3B; padding-bottom: 50px;">
+  <div>
+    <nav>
+      <div class="nav1">Perfume</div>
+      <div class="nav2">
+        <a routerLink="/login" style="margin-right: 25px; font-size: 25px; font-family: cursive; ">Login</a>
+        <!--<a routerLink="/login"><img src="assets/user.jpg"></a>-->
+      </div>
+    </nav>
+  </div>
+  <div class="head">
+    <h1 style="font-family: Georgia, serif;font-size:35px">Sign Up</h1>
+    <a style="margin-top:80px;">Please fill in this form to create an account</a>
+    <form [formGroup]="registerForm" (ngSubmit)="SignUp()">
+      <div class="head1">
+        <div>
+          <input style="margin-top:70px;" type="text" placeholder="First Name" formControlName="firstName" />
+        </div>
+        <div>
+          <input style="margin-top:70px;" type="text" placeholder="Last Name" formControlName="lastName" />
+        </div>
+      </div>
+      <div class="head1">
+        <div>
+          <input type="text" placeholder="Email Id" formControlName="emailId" />
+        </div>
+        <div>
+          <input type="text" placeholder="Mobile No" formControlName="phone" />
+        </div>
+      </div>
+      <div class="head1">
+        <div>
+          <input type="text" placeholder="Password" formControlName="password" />
+        </div>
+        <div>
+          <input type="text" placeholder="Confirm Password" formControlName="confirmPassword" />
+        </div>
+      </div>
+      <div style="display:flex;margin-left:600px;gap:10px; ">
+        <h5 style="margin-bottom: 30px; font-family:cursive;font-size:25px;">Do you have an account?</h5>
+        <h5 routerLink="/login" style="color:hotpink;font-size:25px; ">Login</h5>
+      </div>
+      <div style="text-align:center;">
+        <button type="submit" style=" height: 40px; width: 120px; background-color:#231B3B;color:white;border-block-color:white;margin-top:1px;">Sign Up</button>
+      </div>
+    </form>
+    <div *ngIf="registrationStatus" style="color:white">
+      {{ registrationStatus }}     
+    </div>   
+  </div>
+</div>
+<div style="background-color: #231B3B; padding-bottom: 20px; padding-top: 10px;">
+  <app-footer></app-footer>
+</div>

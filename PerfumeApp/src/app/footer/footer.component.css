@@ -1,0 +1,10 @@
+.footer {
+  margin-top: 5px;
+  background-color: #231B3B;
+  text-align: center;
+}
+img {
+  width: 41px;
+  height: 41px;
+  border-radius: 60px;
+}

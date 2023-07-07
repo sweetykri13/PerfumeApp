@@ -1,0 +1,48 @@
+<div style="background-color: #231B3B; padding-bottom: 50px;">
+  <div>
+    <app-navbar></app-navbar>
+  </div>
+  <div style="display:flex; flex-direction: column; align-items: flex-start; padding-left: 130px; padding-top: 60px;">
+    <h1 style="color: white; font-size: 70px; font-family: Georgia, serif;margin-top:30px;">Best Fragrances,Great</h1>
+    <h1 style="color: white; font-size: 70px; font-family: Georgia, serif; margin-top:30px;"> Deals</h1>
+    <h5 style="color: white; font-size: 30px; margin-top: 20px;">The seasonal specials</h5>
+    <div style="text-align:center;">
+      <button routerLink="/shop" style="height: 40px; width: 120px; background-color:deeppink; color:white; border-block-color:white; margin-top: 39px;">Shop Now</button>
+    </div>
+  </div>
+  <div class="img1">
+    <a><img src="assets/perfumehome1.jpg"></a>
+  </div>
+  <div style="display:flex; flex-wrap: wrap; justify-content: center; margin-top: 60px;">
+    <div *ngFor="let prod of products.slice(0, 4)" style="width: 25%; padding: 17px;">
+      <div class="card">
+        <div class="card" style="display:flex;gap:5px;">
+          <img class="img1 card-image" src="assets/perfumehome1.jpg" alt="Product Image">
+          <button class="button1 card-button" style="width:30px;height:30px; margin-top:8px;margin-left:10px;" (click)="addToWishlist(prod)" [ngClass]="{ 'active': isWishlistActive }">
+            <i class="bi bi-heart-fill"></i>
+          </button>
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">{{prod.productName}}</h3>
+          <p class="card-description">${{prod.price}}</p>
+          <button class="card-button" (click)="addToCart(prod)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:70px;">
+    <h1 style="color: white; margin-bottom: 30px; font-family: Georgia, serif;">Subscribe Form</h1>
+    <form [formGroup]="subscribeForm" (ngSubmit)="subscribe()">
+      <div>
+        <input style="width:270px;border:2px solid gray;height:60px;width:410px; background-color: #231B3B; color: white;" type="text" placeholder="e.g.,email@example.com" formControlName="emailId" />
+      </div>
+      <button type="submit" style=" height: 40px; width: 120px; background-color:#231B3B;color:white;border-block-color:white;margin-top:25px;">Join Us</button>
+    </form>
+    <div *ngIf="subscribeStatus" style="color:white;margin-top:20px;">
+      {{ subscribeStatus }}
+    </div>
+  </div>
+</div>
+<div style="background-color: #231B3B; padding-bottom: 10px; padding-top: 10px;">
+  <app-footer></app-footer>
+</div>

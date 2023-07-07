@@ -1,0 +1,25 @@
+<nav>
+  <div class="nav1">Perfume</div>
+  <div class="nav3">
+    <button (click)="navigateTo('home')" [class.active]="isActive('home')">Home</button>
+    <button (click)="navigateTo('shop')" [class.active]="isActive('shop')">Shop</button>
+    <button (click)="navigateTo('supports')" [class.active]="isActive('supports')">Supports</button>
+    <button (click)="navigateTo('faq')" [class.active]="isActive('faq')">FAQ</button>
+    <button (click)="navigateTo('contact')" [class.active]="isActive('contact')">Contact</button>
+    <button (click)="navigateTo('review')" [class.active]="isActive('review')">Reviews</button>
+    <button (click)="navigateTo('aboutus')" [class.active]="isActive('aboutus')">About Us</button>
+  </div>
+  <div class="nav2">
+    <a style="height:38px;width:38px;margin-top:7px;margin-right:40px;" routerLink="/wishlist">
+      <i style="font-size:32px;margin-left:3px" class="bi bi-heart-fill"></i>
+    </a>
+  </div>
+  <div class="nav2">
+    <a routerLink="/cart"><img src="assets/Cart.png"></a>
+    <a routerLink="/cart" style="margin-left:2px;margin-right:20px;">Cart</a>
+  </div>
+  <div class="nav2">
+    <a (click)="onLogout()">
+      <i style="font-size:32px;margin-right:7px " class="bi bi-box-arrow-right"></i></a>
+</div>
+</nav>

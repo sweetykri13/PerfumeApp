@@ -1,0 +1,51 @@
+.head3{
+    color:white;
+    margin-left:140px;
+    margin-top:220px;
+}
+
+.head {
+  color: white;
+  text-align: center;
+  margin-top: 70px;
+  margin-left: 30px;
+  
+}
+
+.head1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left: 300px;
+  margin-right:90px;
+  
+}
+
+  .head1 div {
+    flex-basis: 50%;
+  }
+
+    .head1 div input[type="text"] {
+      width: 300px;
+      padding: 7px;
+      color: white;
+      background-color: #231B3B;
+      
+    }
+
+  .select {
+    width: 460px;
+    padding: 12px;
+    color: white;
+    margin-right: 95px;
+    margin-left: 100px;
+    background-color: #231B3B;
+  }
+
+  .image{
+      width:20px;
+      height:20px;
+  }
+
+

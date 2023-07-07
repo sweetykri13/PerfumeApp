@@ -1,0 +1,34 @@
+<div style="background-color: #231B3B; padding-bottom: 50px;">
+  <div>
+    <nav>
+      <div class="nav1">Perfume</div>
+      <div class="nav2">
+        <a routerLink="/signUp"><i style="font-size:35px;margin-right:2px;" class="bi bi-person-plus"></i></a>
+        <a routerLink="/signUp" style="font-size: 25px; margin-right: 25px; font-family: cursive;">Sign Up</a>
+      </div>
+    </nav>
+
+  </div>
+  <div class="head">
+    <h1 style="font-family: Georgia,serif;font-size:35px;">Welcome to Perfume World</h1>
+    <a style="margin-bottom:160px; ">Email Id and Password are required</a>
+    <form (ngSubmit)="onLogin()">
+      <div class="head1">
+        <input [(ngModel)]="email" type="text" name="email" style="width: 663px;color: white;margin-top:60px; background-color: #231B3B; margin-left: 347px; height: 45px;margin-right:93px; " placeholder="Email Id" />
+      </div>
+      <div class="head1">
+        <input [(ngModel)]="password" type="password" name="password" style="width: 663px;color: white; background-color: #231B3B; margin-left: 347px; height: 45px;margin-right:93px; " placeholder="Password" />
+      </div>
+      <div style="display:flex;margin-left:600px;gap:10px; ">
+        <h4 style="font-size:25px; margin-bottom: 30px; font-family:cursive;">Not an account?</h4>
+        <h5 routerLink="/signUp" style="color:hotpink;font-size:25px; ">Sign Up</h5>
+      </div>
+      <div style="text-align:center;">
+        <button type="submit" style=" height:40px; width: 120px; background-color:#231B3B;color:white;border-block-color:white;margin-top:1px;">Log In</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div style="background-color: #231B3B;padding-bottom: 20px; padding-top: 10px;">
+  <app-footer></app-footer>
+</div>

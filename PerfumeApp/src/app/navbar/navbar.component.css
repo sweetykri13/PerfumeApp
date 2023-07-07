@@ -1,0 +1,59 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightcoral;
+  color: #fff;
+}
+
+.nav2 {
+  text-decoration: none;
+  display: flex;
+  gap: 0.7rem;
+  height: 90px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.nav1 {
+  font-size: 50px;
+  color: #fff;
+  margin-left: 1px;
+  margin-right: 6px;
+  font-family: "Brush Script MT", cursive;
+}
+
+.nav3 {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-right: 500px;
+  border-radius: 10px;
+}
+
+  .nav3 button {
+    height: 39px;
+    width: 82px;
+    background-color: lightcoral;
+    color: white;
+    border-color: lightcoral;
+  }
+
+    .nav3 button.active {
+      background-color: hotpink;
+    }
+
+    .nav3 button:hover {
+      background-color: gray;
+    }
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  width: 33px;
+  height: 33px;
+  border-radius: 90px;
+}

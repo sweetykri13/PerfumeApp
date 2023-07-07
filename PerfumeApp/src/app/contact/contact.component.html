@@ -1,0 +1,51 @@
+<div style="background-color: #231B3B; padding-bottom: 50px;">
+  <div>
+    <app-navbar></app-navbar>
+  </div>
+  <div style="display:flex;">
+    <div class="head3">
+      <h2 style="margin-bottom: 30px; font-family: Georgia, serif;">Contact Us</h2>
+      <div>
+        <h5 style="margin-bottom:20px;font-family:Times New Roman,Times, serif;">Kolkata Station Rd, Belgachia, Kolkata, West Bengal, India</h5>
+        <h6 style="margin-bottom:20px;">info@pferume.in ( 24X7)</h6>
+        <a style="margin-bottom:20px;">6202808XXX ( available soon )</a>
+      </div>
+    </div>
+    <div class="head">    
+      <form [formGroup]="contactForm" (ngSubmit)="Addcontact()">
+        <div style="display: flex;gap:80px; margin-left: 250px;margin-right:40px;margin-bottom:70px;">
+          <div>
+            <input style="width:270px; background-color: #231B3B; color: white;" type="text" placeholder="Name" formControlName="name" required/>
+          </div>
+          <div>
+            <input style="width: 270px; background-color: #231B3B; color: white;" type="text" placeholder="Email Id" formControlName="emailId" required/>
+          </div>
+        </div>
+        <div style="display: flex; gap: 80px; margin-left: 250px;">
+          <div>
+            <input style="width: 270px; background-color: #231B3B; color: white;" type="text" placeholder="Phone" formControlName="phone" required/>
+          </div>
+          <div>
+            <input style="width: 270px; background-color: #231B3B; color: white;" type="text" placeholder="Address" formControlName="address" required/>
+          </div>
+        </div>
+        <div>
+          <input type="text" style="margin-top:50px; width: 620px; color: white; background-color: #231B3B; margin-left: 250px; height: 37px;margin-right:93px; " placeholder="Subject" formControlName="subject" required/>
+        </div>
+        <div>
+          <input type="text" style="width: 620px; margin-top: 50px; color: white; background-color: #231B3B; margin-left: 250px; height: 57px; margin-right: 93px; " placeholder="Message" formControlName="message" required/>
+        </div>
+        <div style="text-align:center;margin-left:100px;">
+          <button type="submit" style=" height: 40px; width: 120px; background-color:#231B3B;color:white;border-block-color:white;margin-top:39px;">Submit</button>
+        </div>
+      </form>
+      <div *ngIf="contactStatus" style="color:white;margin-top:20px;margin-left:50px;">
+        {{ contactStatus }}
+      </div>
+    </div>
+  </div>
+</div>
+  <div style="background-color: #231B3B; padding-bottom: 5px; padding-top: 5px;">
+    <app-footer></app-footer>
+  </div>
+

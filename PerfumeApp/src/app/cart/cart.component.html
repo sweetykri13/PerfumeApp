@@ -1,0 +1,44 @@
+<div style="background-color: #231B3B; padding-bottom: 50px;">
+  <div>
+    <app-navbar></app-navbar>
+  </div>
+  <div style="position: relative;">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 50px; gap: 50px;margin-right:470px;">
+    <div *ngFor="let prod of products" style="width: 870px;height:140px; background-color:white;">
+      <img src="assets/perfumehome1.jpg" alt="Product Image">
+      <h3 style="color:black;margin-left:210px;margin-top:-100px;">{{ prod.productName }}</h3>
+      <span style="color: black;font-size:20px;margin-left:230px;">${{ prod.price }}</span>
+      <div style="color: black; margin-left: 450px; margin-top: -50px;">
+        <button (click)="decreaseQuantity(prod)" style=" background-color: hotpink;margin-right:10px;">-</button>
+        <span style="font-size:20px;">{{ prod.quantity }}</span>
+        <button (click)="increaseQuantity(prod)" style="background-color:hotpink;margin-left:10px;">+</button>
+        <button style="background-color:hotpink;margin-left:158px;" (click)="addToWishlist(prod)">Move to Wishlist</button>
+        <button style="background-color: hotpink; margin-left: 253px;width:70px;margin-top:10px;" (click)="removeItemFromWishlist(prod)">Remove</button>
+      </div>
+    </div>
+  </div>
+  <div style="position: absolute; top: 1px; right: 20px; width: 430px; color: gray; background-color: white; border: 2px solid gray;">
+    <div style="border: 1px solid gray; text-align: center;"><h1 style="font-size:32px;">Price Details</h1></div>
+    <div style="display: flex; gap: 190px; margin-top: 20px; margin-left: 10px; font-size: 23px;">
+      <a>Price(items)</a>
+      <h4 style="margin-top: 10px; font-size: 21px;">${{ calculateTotalAmount() }}</h4>
+    </div>
+    <div style="display: flex; gap: 250px; margin-top: 20px; margin-left: 10px; font-size: 23px;">
+      <a>Discount</a>
+      <h4 style="color: forestgreen; font-size: 23px;">5%</h4>
+    </div>
+    <div style="display: flex; gap: 85px; margin-top: 20px; margin-left: 10px; margin-bottom: 10px;">
+      <a style="font-size: 23px;">Delivery Charges</a>
+      <h5 style="color: forestgreen; font-size: 21px;">Free Delivery</h5>
+    </div>
+    <div style="display: flex; gap: 115px; margin-top: 10px; border: 2px solid gray;">
+      <h4 style="margin-bottom: 20px; margin-top: 20px; margin-left: 10px;font-size:26px;">Total Amount</h4>
+      <h3 style="margin-top: 15px; font-size: 26px;">${{ calculateAmount() }}</h3>
+    </div>
+  </div>
+</div>
+<h1 *ngIf="products.length === 0" style="color: white; text-align: center; margin-top: 250px;">No Product Added</h1>
+</div>
+<div style="background-color: #231B3B; padding-bottom: 20px; padding-top: 280px;">
+  <app-footer></app-footer>
+</div>

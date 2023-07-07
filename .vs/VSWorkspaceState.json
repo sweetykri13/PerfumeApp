@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\PerfumeApp",
+    "\\PerfumeApp\\src",
+    "\\PerfumeApp\\src\\app",
+    "\\PerfumeApp\\src\\app\\about-us",
+    "\\PerfumeApp\\src\\app\\cart",
+    "\\PerfumeApp\\src\\app\\faq",
+    "\\PerfumeApp\\src\\app\\home",
+    "\\PerfumeApp\\src\\app\\reviews",
+    "\\PerfumeApp\\src\\app\\support"
+  ],
+  "SelectedNode": "\\PerfumeApp\\src\\app\\dialog\\dialog.component.ts",
+  "PreviewInSolutionExplorer": true
+}

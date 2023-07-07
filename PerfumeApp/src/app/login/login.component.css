@@ -1,0 +1,67 @@
+.head {
+  color: white;
+  text-align: center;
+  margin-top: 130px;
+  margin-left: 30px;
+}
+
+.head1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+  margin-left: 40px;
+  /*border:2px solid red;*/
+}
+
+  .head1 div {
+    flex-basis: 180%;
+  }
+
+    .head1 div input[type="text"] {
+      width: 500px;
+      padding: 7px;
+      color: white;
+      background-color: #231B3B;
+    }
+
+  .head1 select {
+    width: 1260px;
+    padding: 12px;
+    color: white;
+    margin-right: 95px;
+    margin-left: 100px;
+    background-color: #231B3B;
+  }
+.nav1 {
+  font-size: 50px;
+  color: #fff;
+  margin-left: 21px;
+  margin-right: 6px;
+  font-family: "Brush Script MT", cursive;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightcoral;
+  color: #fff;
+}
+.nav2 {
+  text-decoration: none;
+  display: flex;
+  gap: 0.7rem;
+  height: 90px;
+  font-size: 20px;
+  align-items: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+
+img {
+  width: 33px;
+  height: 33px;
+  border-radius: 90px;
+}

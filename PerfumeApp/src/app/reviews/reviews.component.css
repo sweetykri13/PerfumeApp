@@ -1,0 +1,66 @@
+.head3 {
+  color: white;
+  margin-left: 80px;
+  margin-top: 110px;
+}
+
+.head {
+  color: white;
+  text-align: center;
+  margin-top: 90px;
+  margin-left: 30px;
+}
+
+.head1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-left: 300px;
+  margin-right: 90px;
+}
+
+  .head1 div {
+    flex-basis: 50%;
+  }
+
+    .head1 div input[type="text"] {
+      width: 300px;
+      padding: 7px;
+      color: white;
+      background-color: #231B3B;
+    }
+
+.select {
+  width: 460px;
+  padding: 12px;
+  color: white;
+  margin-right: 95px;
+  margin-left: 100px;
+  background-color: #231B3B;
+}
+/*.rating-container {
+  display: flex;
+}
+
+.star {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  margin-right: 5px;
+}
+
+.filled {
+  background-color: gold;
+}*/
+
+.checked {
+  color: orange;
+}
+
+img {
+  width: 350px;
+  height: 110px;
+  margin-top:50px;
+  margin-bottom:40px;
+}

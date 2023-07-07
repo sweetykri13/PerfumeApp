@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerfumeDAL", "PerfumeDAL\PerfumeDAL.csproj", "{1500BAE9-7C17-4077-A1A8-E6D0E83986A4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PerfumeAPI", "PerfumeAPI\PerfumeAPI.csproj", "{4EDC9238-C416-4BB2-91DB-5C83F067D260}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1500BAE9-7C17-4077-A1A8-E6D0E83986A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1500BAE9-7C17-4077-A1A8-E6D0E83986A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1500BAE9-7C17-4077-A1A8-E6D0E83986A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1500BAE9-7C17-4077-A1A8-E6D0E83986A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EDC9238-C416-4BB2-91DB-5C83F067D260}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EDC9238-C416-4BB2-91DB-5C83F067D260}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EDC9238-C416-4BB2-91DB-5C83F067D260}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EDC9238-C416-4BB2-91DB-5C83F067D260}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52F43E2C-8641-4BD3-A8D5-39FEE03D7016}
+	EndGlobalSection
+EndGlobal
